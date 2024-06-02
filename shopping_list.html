@@ -22,7 +22,7 @@
             formData.append('name', content);
             formData.append('csrfmiddlewaretoken', token);
             
-            let response = await fetch('http://192.168.178.105/myList/', {method: 'POST', body: formData});
+            let response = await fetch('https://192.168.178.105/myList/', {method: 'POST', body: formData});
             let data = await response.json();
             console.log(data.name);
         }
